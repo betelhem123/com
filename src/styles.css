@@ -1,10 +1,5 @@
-/* src/styles.css */
-
-/* Tailwind's Base Styles */
+/* index.css or global.css or your main CSS file */
 @tailwind base;
-
-/* Tailwind's Component Styles */
 @tailwind components;
-
-/* Tailwind's Utility Styles */
 @tailwind utilities;
+@import "tailwindcss";
