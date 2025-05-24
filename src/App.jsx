@@ -3,8 +3,8 @@ import Home from './pages/Home';
 import About from './pages/About';
 import Shop from './pages/Shop';
 import Contact from './pages/Contact';
-import Fotter from './components/Fotter';
-
+import AboutPage from './components/AboutPage';
+import Footer from './components/Footer';
 function App() {
   return (
     <div className="scroll-smooth">
@@ -12,9 +12,10 @@ function App() {
       <main className="pt-16">
         <Home />
         <About />
+        <AboutPage />
         <Shop />
         <Contact />
-        <Fotter />
+        <Footer />
       </main>
     </div>
   );

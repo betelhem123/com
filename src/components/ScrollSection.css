@@ -1,0 +1,33 @@
+/* ScrollSection.css */
+
+.perspective {
+  perspective: 1000px;
+}
+
+.section-image {
+  width: 100%;
+  height: auto;
+  transform: rotateX(10deg) rotateY(10deg);
+  transition: transform 1s ease, opacity 1s ease;
+  opacity: 0;
+}
+
+.scroll-section:hover .section-image {
+  transform: rotateX(0deg) rotateY(0deg) scale(1.05);
+  opacity: 1;
+}
+
+.drop-animation {
+  animation: dropFadeIn 1s ease forwards;
+}
+
+@keyframes dropFadeIn {
+  0% {
+    transform: translateY(-40px) rotateX(15deg) rotateY(15deg);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0) rotateX(0deg) rotateY(0deg);
+    opacity: 1;
+  }
+}
